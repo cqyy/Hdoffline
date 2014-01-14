@@ -1,0 +1,1602 @@
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Cleaning up the staging area file:/tmp/hadoop-yy/mapred/staging/yy77379403/.staging/job_local_0001
+PriviledgedActionException as:yy (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory ../temp already exists
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy-1330079731/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@51b273af
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+11373658
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+Found checksum error: b[0, 512]=3131313835333535333009e79599e8bdace58f91e5beaee58d9ae8bdace58f91e5beaee58d9a7c202020202020202020202020e78795e889afe58d8e20202020207c202020202020202020202020e78795e889afe58d8e202020202020200a3131313835353430383009e7a28ee4ba86e59388e59388e59388e59388e59388e5938820e68891e59ca8e58187e8a385e5958ae5958ae5958ae5958ae5958ae5958ae5958a20e59388e59388e59388e59388e5938820e597af20e5a5bde6838ae68190202020e59388e59388e59388e59388e59388e59388e5938820e68891e69c89e79785e59388e59388e59388e59388e5a5bde4b8bbe6848fe5958ae5958ae5958ae5958ae5958a20e8aea9e887aae5b7b1e983bde5bf83e796bce887aae5b7b1e59388e59388e59388e59388e59388e59388e5938820e59388e59388e5938820e5938e20e5a5bde5a49ae5a4a9e6b2a1e8a781e4bb96e59388e59388e59388e59388676574202020e59388e59388e59388e5938820e59388e59388e59388e59388e59388e59388e5938820e5958ae5958ae5958ae5958ae5958ae5958ae5958ae5958ae5958a207c202020202020202020202020e6ae8ae6bca0e8bdbbe8bdbb20e7ac91e5b0bf202020e69c882020e697a520202020202020202020202020202020202020e99c812020202020e698af636ce590a7202020e69c882020e697
+org.apache.hadoop.fs.ChecksumException: Checksum error: file:/home/yy/workspace/weiboout/part-r-00000 at 0
+	at org.apache.hadoop.fs.FSInputChecker.verifySum(FSInputChecker.java:277)
+	at org.apache.hadoop.fs.FSInputChecker.readChecksumChunk(FSInputChecker.java:241)
+	at org.apache.hadoop.fs.FSInputChecker.read1(FSInputChecker.java:189)
+	at org.apache.hadoop.fs.FSInputChecker.read(FSInputChecker.java:158)
+	at java.io.DataInputStream.read(DataInputStream.java:100)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:205)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:169)
+	at org.apache.hadoop.mapreduce.lib.input.LineRecordReader.nextKeyValue(LineRecordReader.java:114)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.nextKeyValue(MapTask.java:456)
+	at org.apache.hadoop.mapreduce.MapContext.nextKeyValue(MapContext.java:67)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:143)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:648)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:218)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Map task executor complete.
+job_local_0001
+java.lang.Exception: org.apache.hadoop.fs.ChecksumException: Checksum error: file:/home/yy/workspace/weiboout/part-r-00000 at 0
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:349)
+Caused by: org.apache.hadoop.fs.ChecksumException: Checksum error: file:/home/yy/workspace/weiboout/part-r-00000 at 0
+	at org.apache.hadoop.fs.FSInputChecker.verifySum(FSInputChecker.java:277)
+	at org.apache.hadoop.fs.FSInputChecker.readChecksumChunk(FSInputChecker.java:241)
+	at org.apache.hadoop.fs.FSInputChecker.read1(FSInputChecker.java:189)
+	at org.apache.hadoop.fs.FSInputChecker.read(FSInputChecker.java:158)
+	at java.io.DataInputStream.read(DataInputStream.java:100)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:205)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:169)
+	at org.apache.hadoop.mapreduce.lib.input.LineRecordReader.nextKeyValue(LineRecordReader.java:114)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.nextKeyValue(MapTask.java:456)
+	at org.apache.hadoop.mapreduce.MapContext.nextKeyValue(MapContext.java:67)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:143)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:648)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:218)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+ map 0% reduce 0%
+Job complete: job_local_0001
+Counters: 0
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Cleaning up the staging area file:/tmp/hadoop-yy/mapred/staging/yy-1507169480/.staging/job_local_0001
+PriviledgedActionException as:yy (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory ../weiboout already exists
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy1508806164/.staging/job_local_0001
+Total input paths to process : 3
+Snappy native library not loaded
+Total # of splits: 6
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 6
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@4490bc23
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1385512140_A:33554432+33568612
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Starting task: attempt_local_0001_m_000001_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000001_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@275610c9
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1385032398:33554432+33563078
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 16% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000001_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000001_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000001_0' done.
+Finishing task: attempt_local_0001_m_000001_0
+Starting task: attempt_local_0001_m_000002_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000002_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@2628eb36
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1386888508:33554432+33554924
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 33% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000002_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000002_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000002_0' done.
+Finishing task: attempt_local_0001_m_000002_0
+Starting task: attempt_local_0001_m_000003_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000003_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@d5ea6bb
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1385032398:0+33554432
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 50% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000003_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000003_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000003_0' done.
+Finishing task: attempt_local_0001_m_000003_0
+Starting task: attempt_local_0001_m_000004_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000004_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@78f110cb
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1385512140_A:0+33554432
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 66% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000004_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000004_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000004_0' done.
+Finishing task: attempt_local_0001_m_000004_0
+Starting task: attempt_local_0001_m_000005_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000005_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@40f33dde
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weibo/weibo.txt1386888508:0+33554432
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 83% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000005_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000005_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000005_0' done.
+Finishing task: attempt_local_0001_m_000005_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@61018ece
+
+Merging 6 sorted segments
+Down to the last merge-pass, with 6 segments left of total size: 47542975 bytes
+
+ map 100% reduce 0%
+Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+
+Task attempt_local_0001_r_000000_0 is allowed to commit now
+Moved file:/home/yy/workspace/weiboout/_temporary/_attempt_local_0001_r_000000_0/part-r-00000 to ../weiboout/part-r-00000
+Saved output of task 'attempt_local_0001_r_000000_0' to ../weiboout
+attempt_local_0001_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0001_r_000000_0' done.
+ map 100% reduce 100%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=953795959
+    FILE_BYTES_WRITTEN=245422243
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=255391
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=510584
+    Map output bytes=46879028
+    Total committed heap usage (bytes)=4020895744
+    CPU time spent (ms)=0
+    Virtual memory (bytes) snapshot=0
+    SPLIT_RAW_BYTES=688
+    Map output records=255292
+    Combine input records=0
+    Reduce input records=255292
+Creating filesystem for hdfs://server:8020
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy1716445871/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1ac91010
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+32255824
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@20a4fc7
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+job_local_0001
+java.lang.NullPointerException
+	at com.wsc.hdbp.offline.weibo.WeiboRepliesRepeatCount$RRReducer.reduce(WeiboRepliesRepeatCount.java:60)
+	at com.wsc.hdbp.offline.weibo.WeiboRepliesRepeatCount$RRReducer.reduce(WeiboRepliesRepeatCount.java:51)
+	at org.apache.hadoop.mapreduce.Reducer.run(Reducer.java:176)
+	at org.apache.hadoop.mapred.ReduceTask.runNewReducer(ReduceTask.java:572)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:414)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:392)
+ map 100% reduce 0%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=32508000
+    FILE_BYTES_WRITTEN=429147
+  Map-Reduce Framework
+    Reduce input groups=1
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=0
+    Spilled Records=11121
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=278331392
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=110
+    Reduce input records=1
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy1566654901/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1ac91010
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+32255824
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@20a4fc7
+
+ map 100% reduce 0%
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+
+Task attempt_local_0001_r_000000_0 is allowed to commit now
+Moved file:/home/yy/workspace/temp/_temporary/_attempt_local_0001_r_000000_0/part-r-00000 to ../temp/part-r-00000
+Saved output of task 'attempt_local_0001_r_000000_0' to ../temp
+attempt_local_0001_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0001_r_000000_0' done.
+ map 100% reduce 100%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=65394120
+    FILE_BYTES_WRITTEN=1026421
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=22242
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=556924928
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=110
+    Reduce input records=11121
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Cleaning up the staging area file:/tmp/hadoop-yy/mapred/staging/yy-954690807/.staging/job_local_0001
+PriviledgedActionException as:yy (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory ../temp already exists
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy-1496990419/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1df41e93
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+32255824
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@29ef4453
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+
+Task attempt_local_0001_r_000000_0 is allowed to commit now
+Moved file:/home/yy/workspace/temp/_temporary/_attempt_local_0001_r_000000_0/part-r-00000 to ../temp/part-r-00000
+Saved output of task 'attempt_local_0001_r_000000_0' to ../temp
+attempt_local_0001_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0001_r_000000_0' done.
+ map 100% reduce 100%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=65394120
+    FILE_BYTES_WRITTEN=1026425
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=22242
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=556793856
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=110
+    Reduce input records=11121
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy-1593537087/.staging/job_local_0002
+Cleaning up the staging area file:/tmp/hadoop-yy/mapred/staging/yy-1593537087/.staging/job_local_0002
+PriviledgedActionException as:yy (auth:SIMPLE) cause:java.io.IOException: No input paths specified in job
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Cleaning up the staging area file:/tmp/hadoop-yy/mapred/staging/yy2113194673/.staging/job_local_0001
+PriviledgedActionException as:yy (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory ../temp already exists
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy1988446207/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@4490bc23
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+32255824
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1b6ebaa7
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+ map 100% reduce 0%
+Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+
+Task attempt_local_0001_r_000000_0 is allowed to commit now
+Moved file:/home/yy/workspace/temp/_temporary/_attempt_local_0001_r_000000_0/part-r-00000 to ../temp/part-r-00000
+Saved output of task 'attempt_local_0001_r_000000_0' to ../temp
+attempt_local_0001_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0001_r_000000_0' done.
+ map 100% reduce 100%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=65394120
+    FILE_BYTES_WRITTEN=1026421
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=22242
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=549847040
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=110
+    Reduce input records=11121
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy585435003/.staging/job_local_0002
+Total input paths to process : 1
+Total # of splits: 1
+Printing tokens for job: job_local_0002
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0002
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0002_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0002/attempt_local_0002_m_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@54657f7f
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/temp/part-r-00000:0+166815
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0002_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0002_m_000000_0' done.
+Finishing task: attempt_local_0002_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0002/attempt_local_0002_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@15912a37
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+Output path is null in cleanup
+ map 100% reduce 0%
+Job complete: job_local_0002
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=33054410
+    FILE_BYTES_WRITTEN=1026232
+  Map-Reduce Framework
+    Reduce input groups=1
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=0
+    Spilled Records=11121
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=374669312
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=106
+    Reduce input records=1
+job_local_0002
+java.lang.ClassCastException: org.apache.hadoop.io.IntWritable cannot be cast to org.apache.hadoop.io.Text
+	at com.wsc.hdbp.offline.outputformat.RedisOutputFormatForHash$RedisHashRecordWriter.write(RedisOutputFormatForHash.java:54)
+	at com.wsc.hdbp.offline.outputformat.RedisOutputFormatForHash$RedisHashRecordWriter.write(RedisOutputFormatForHash.java:33)
+	at org.apache.hadoop.mapred.ReduceTask$NewTrackingRecordWriter.write(ReduceTask.java:514)
+	at org.apache.hadoop.mapreduce.TaskInputOutputContext.write(TaskInputOutputContext.java:80)
+	at org.apache.hadoop.mapreduce.Reducer.reduce(Reducer.java:156)
+	at org.apache.hadoop.mapreduce.Reducer.run(Reducer.java:176)
+	at org.apache.hadoop.mapred.ReduceTask.runNewReducer(ReduceTask.java:572)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:414)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:392)
+Removing filesystem for file:///
+Removing filesystem for file:///
+ Creating new Groups object
+Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+hadoop login
+hadoop login commit
+using local user:UnixPrincipal: yy
+UGI loginUser:yy (auth:SIMPLE)
+Creating filesystem for file:///
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Initializing JVM Metrics with processName=JobTracker, sessionId=
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+Trying to load the custom-built native-hadoop library...
+Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+java.library.path=/home/yy/idea-IU-129.1359/bin::/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy-22359954/.staging/job_local_0001
+Total input paths to process : 1
+Snappy native library not loaded
+Total # of splits: 1
+Printing tokens for job: job_local_0001
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0001
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0001_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_m_000000_0
+using new api for output committer
+setsid exited with exit code 0
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1df41e93
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/weiboout/part-r-00000:0+32255824
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+ map 0% reduce 0%
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0001_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0001_m_000000_0' done.
+Finishing task: attempt_local_0001_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0001/attempt_local_0001_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@3a3ca4ae
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+ map 100% reduce 0%
+Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+
+Task attempt_local_0001_r_000000_0 is allowed to commit now
+Moved file:/home/yy/workspace/temp/_temporary/_attempt_local_0001_r_000000_0/part-r-00000 to ../temp/part-r-00000
+Saved output of task 'attempt_local_0001_r_000000_0' to ../temp
+attempt_local_0001_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0001_r_000000_0' done.
+ map 100% reduce 100%
+Job complete: job_local_0001
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=65394120
+    FILE_BYTES_WRITTEN=1026417
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=22242
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=557318144
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=110
+    Reduce input records=11121
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:537)
+Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+PriviledgedAction as:yy (auth:SIMPLE) from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:881)
+adding the following namenodes' delegation tokens:null
+Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+default FileSystem: file:///
+No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Creating splits at file:/tmp/hadoop-yy/mapred/staging/yy-1466324987/.staging/job_local_0002
+Total input paths to process : 1
+Total # of splits: 1
+Printing tokens for job: job_local_0002
+Fully deleting contents of /tmp/hadoop-yy/mapred/local/localRunner
+Running job: job_local_0002
+Starting thread pool executor.
+Max local threads: 1
+Map tasks to process: 1
+Waiting for map tasks
+Starting task: attempt_local_0002_m_000000_0
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0002/attempt_local_0002_m_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@61fe13e1
+Adding SPLIT_RAW_BYTES
+Processing split: file:/home/yy/workspace/temp/part-r-00000:0+166815
+Adding MAP_INPUT_RECORDS
+io.sort.mb = 100
+data buffer = 79691776/99614720
+record buffer = 262144/327680
+Adding MAP_OUTPUT_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+Starting flush of map output
+Finished spill 0
+Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0002_m_000000_0 Progress/ping thread exiting since it got interrupted
+
+Task 'attempt_local_0002_m_000000_0' done.
+Finishing task: attempt_local_0002_m_000000_0
+Map task executor complete.
+currentIndex 0   0:0
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding SPILLED_RECORDS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_INPUT_RECORDS
+Adding REDUCE_OUTPUT_RECORDS
+Adding COMBINE_OUTPUT_RECORDS
+mapred.local.dir for child : /tmp/hadoop-yy/mapred/local/taskTracker/yy/jobcache/job_local_0002/attempt_local_0002_r_000000_0
+using new api for output committer
+ Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@45d1f40c
+
+Merging 1 sorted segments
+Down to the last merge-pass, with 1 segments left of total size: 378116 bytes
+
+ map 100% reduce 0%
+Task:attempt_local_0002_r_000000_0 is done. And is in the process of commiting
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+attempt_local_0002_r_000000_0 Progress/ping thread exiting since it got interrupted
+reduce > reduce
+Task 'attempt_local_0002_r_000000_0' done.
+Output path is null in cleanup
+ map 100% reduce 100%
+Job complete: job_local_0002
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding CPU_MILLISECONDS
+Adding COMMITTED_HEAP_BYTES
+Adding VIRTUAL_MEMORY_BYTES
+Adding COMBINE_INPUT_RECORDS
+Adding MAP_OUTPUT_RECORDS
+Adding SPLIT_RAW_BYTES
+Creating group FileSystemCounters with nothing
+Adding FILE_BYTES_READ
+Adding FILE_BYTES_WRITTEN
+Creating group org.apache.hadoop.mapred.Task$Counter with bundle
+Adding COMBINE_OUTPUT_RECORDS
+Adding MAP_INPUT_RECORDS
+Adding PHYSICAL_MEMORY_BYTES
+Adding SPILLED_RECORDS
+Adding MAP_OUTPUT_BYTES
+Adding COMMITTED_HEAP_BYTES
+Adding CPU_MILLISECONDS
+Adding VIRTUAL_MEMORY_BYTES
+Adding SPLIT_RAW_BYTES
+Adding MAP_OUTPUT_RECORDS
+Adding COMBINE_INPUT_RECORDS
+Adding REDUCE_INPUT_GROUPS
+Adding REDUCE_SHUFFLE_BYTES
+Adding REDUCE_OUTPUT_RECORDS
+Adding REDUCE_INPUT_RECORDS
+Counters: 17
+  FileSystemCounters
+    FILE_BYTES_READ=66486940
+    FILE_BYTES_WRITTEN=2052468
+  Map-Reduce Framework
+    Reduce input groups=11121
+    Combine output records=0
+    Map input records=11121
+    Reduce shuffle bytes=0
+    Physical memory (bytes) snapshot=0
+    Reduce output records=11121
+    Spilled Records=22242
+    Map output bytes=355872
+    CPU time spent (ms)=0
+    Total committed heap usage (bytes)=756809728
+    Virtual memory (bytes) snapshot=0
+    Combine input records=0
+    Map output records=11121
+    SPLIT_RAW_BYTES=106
+    Reduce input records=11121
+Removing filesystem for file:///
+Removing filesystem for file:///

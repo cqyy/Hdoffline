@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<comment>Weibo IO directory</comment>
+	
+		<entry key="hdfs.uri">hdfs://server:8020</entry>
+	
+		<entry key="weibo.contentJoin.input">../weibo/weibo.*</entry>
+		<entry key="weibo.contentJoin.output">../weiboout</entry>
+		
+		<entry key="weibo.user.input">../weibo/user.*</entry>
+		<entry key="weibo.user.output">../weiboout2</entry>
+		
+		<entry key="weibo.info.input"></entry>
+		<entry key="weibo.info.output"></entry>
+		
+		<entry key="weibo.comment_repeat.count.temp">../temp</entry>
+		
+</properties>
